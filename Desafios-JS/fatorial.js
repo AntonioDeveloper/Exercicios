@@ -1,17 +1,19 @@
-let num = null;
-let produto = 1;
+function FirstFactorial(num) { 
 
-function fatorial(num) {
-  if (num == 0) {
-    return 1;
-  } else {
-    for (let i = 1; i <= num; i++) {
-      produto = produto * i;
-    };
-  };
-  return produto;
-};
+  // code goes here  
+  //return num; 
+  let factorial = 1;  
+  let i = num ;
+  let m = 0;
 
-fatorial(5);
+for (i; i >= 1; i--){
+factorial = factorial * i;
 
 
+}
+
+return factorial;
+}
+   
+// keep this function call here 
+console.log(FirstFactorial(8));
