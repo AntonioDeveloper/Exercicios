@@ -1,0 +1,10 @@
+let numbers = [0, 15, 25, 40, 35, 20];
+
+let evenNumbers = numbers.filter((number, index) => {
+//console.log(index);
+if(index%2 == 0){
+return number;
+} 
+});
+
+console.log(evenNumbers);
