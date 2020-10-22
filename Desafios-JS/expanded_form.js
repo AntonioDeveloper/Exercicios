@@ -15,7 +15,7 @@ If you liked this kata, check out part 2!!
 function expandedForm(num) {
   // Your code here
   
-  var tamanho = Math.log(num) * Math.LOG10E + 1 | 0; 
+  var tamanho = Math.log(num) * Math.LOG10E + 1 | 0; //https://stackoverflow.com/questions/14879691/get-number-of-digits-with-javascript
   let numStr = num.toString();
   let decSys = null;
   let decrm = 1;
