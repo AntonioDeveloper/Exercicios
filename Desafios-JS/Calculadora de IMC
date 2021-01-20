@@ -1,3 +1,15 @@
 Calcule o seu IMC
 
-Código disponível em meu Codepen: https://codepen.io/antoniodeveloper/pen/bGwZPvw
+const nome = "Antonio";
+const peso = 80;
+const altura = 1.76;
+let imc = peso / (altura * altura);
+
+document.write(imc);
+
+if(imc >= 30){
+  document.write(`<br> ${nome} você está acima do peso`);
+} else {
+  document.write(`<br> ${nome} você não está acima do peso`);
+}
+
