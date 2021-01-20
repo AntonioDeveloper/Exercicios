@@ -1,0 +1,19 @@
+const nome = "Carlos";
+const sexo = "M";
+const idade = 60;
+const contribuicao = 35;
+let regra = idade + contribuicao;
+
+if(sexo == "F"){
+  if(regra >= 85){
+    document.write(`${nome} você já pode se aposentar`);
+  }else{
+    document.write(`${nome} você ainda não pode se aposentar`);
+  }
+}else{
+  if (regra >= 95){
+    document.write(`${nome} você já pode se aposentar`);
+  } else {
+    document.write(`${nome} você ainda não pode se aposentar`);
+  }
+}
