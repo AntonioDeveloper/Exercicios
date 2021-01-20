@@ -1,0 +1,24 @@
+const programador = {
+  nome: "Rafael",
+  idade: 25,
+  tecnologias: [
+    {
+      nome: "HTML",
+      area: "Front-end"
+    },
+    {
+      nome: "CSS",
+      area: "Front-end"
+    },
+    {
+      nome: "Javascript",
+      area: "Front-end"
+    },
+    {
+      nome: "React",
+      area: "Front-end"
+    }
+  ]
+}
+
+document.write(`O programador ${programador.nome} tem ${programador.idade} anos e usa ${programador.tecnologias[0].nome}, que atua na área ${programador.tecnologias[0].area}`);
