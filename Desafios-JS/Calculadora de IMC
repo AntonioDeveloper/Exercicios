@@ -1,6 +1,6 @@
 Calcule o seu IMC
 
-const nome = "Antonio";
+const nome = "Carlos";
 const peso = 80;
 const altura = 1.76;
 let imc = peso / (altura * altura);
