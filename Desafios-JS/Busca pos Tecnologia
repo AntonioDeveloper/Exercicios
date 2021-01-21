@@ -1,0 +1,18 @@
+const usuarios = [
+  { nome: "Carlos", tecnologias: ["HTML", "CSS"] },
+  { nome: "Jasmine", tecnologias: ["JavaScript", "CSS", "React"] },
+  { nome: "Tuane", tecnologias: ["HTML", "Node.js"] },
+  { nome: "Miguel", tecnologias: ["HTML", "Node.js", "React", "CSS"] }
+];
+
+function checaSeUsuarioUsaCSS() {
+ for(let i = 0; i < usuarios.length; i++){ 
+   for(let j = 0; j < usuarios[i].tecnologias.length; j++){   
+     if(usuarios[i].tecnologias[j] == "CSS"){       document.write(`${usuarios[i].nome} utiliza CSS <br>`);
+     }                                 
+   } 
+ }
+}
+
+
+checaSeUsuarioUsaCSS(usuarios);
