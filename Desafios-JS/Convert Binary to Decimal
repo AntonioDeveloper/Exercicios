@@ -1,0 +1,27 @@
+let bin = "";
+let dec = 0;
+let convertedArr = [];
+let value;
+let conversion;
+
+convertToDec = (bin) => {  
+  let length = bin.length;
+  let pos = length-1; 
+  
+  for(let i = 0 ; i <= (length -1); i++){ 
+     if(parseInt(bin.charAt(i)) != 0 && parseInt(bin.charAt(i)) != 1){
+      alert("Por favor, digite apenas 0 e 1.");
+       return;
+     }else{
+       value = parseInt(bin.charAt(i))*Math.pow(2, pos);    
+    convertedArr.push(value);
+    pos -= 1;    
+    conversion = convertedArr.reduce((acc, curr) => {
+      return acc + curr;
+    }, 0); 
+     }
+  };  
+  return conversion;
+};
+
+console.log(convertToDec("10101011"));
